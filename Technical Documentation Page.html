@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NI Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            NI Documentation
+        </header>
+        <ul class="nl">
+            <li>
+                <a class="nav-link" href="#NI_essentials">NI essentials
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Basic_Drawing">Basic Drawing</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Animation">Animation</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Linked_External">Linked External</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Resources">Resources</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="NI_essentials">
+            <header>
+                NI essentials
+            </header>
+            <article>
+                Unlock the power of computer vision with NI System, a comprehensive full-stack coding language designed
+                to make computer vision development seamless and efficient. Whether you're a beginner or an experienced
+                developer, NI System provides essential tools and features to bring your vision-based projects to life.
+                <ul>
+                    <li>Process images with ease using built-in functions for filtering, enhancement, and
+                        transformation.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Extract meaningful features from images using advanced algorithms.</li>
+                </ul>
+                <ul>
+                    <li>Detect objects in images using pre-trained models and customizable algorithms.</li>
+                </ul>
+                <ul>
+                    <li>Easily integrate with cameras for real-time vision applications.
+                    </li>
+                </ul>
+                <p>Camera Integration:</p>
+                <code>from ni_system import camera_integration
+
+                    # Initialize a camera object
+                    camera = camera_integration.initialize_camera()
+                    
+                    # Capture a frame from the camera
+                    frame = camera_integration.capture_frame(camera)
+                    
+                    # Display the captured frame
+                    camera_integration.display_frame(frame)
+                    
+</code>
+                <p>Object Detection:</p>
+                <code>from ni_system import object_detection
+
+                    # Load an image
+                    img = object_detection.load_image("path/to/image.jpg")
+                    
+                    # Use a pre-trained model for object detection
+                    detected_objects = object_detection.detect_objects(img)
+                    
+                    # Display the image with bounding boxes around detected objects
+                    object_detection.display_detected_objects(img, detected_objects)
+                    
+</code>
+                <p>Feature Extraction:</p>
+                <code>from ni_system import feature_extraction
+
+                    # Load an image
+                    img = feature_extraction.load_image("path/to/image.jpg")
+                    
+                    # Extract corners using Shi-Tomasi algorithm
+                    corners = feature_extraction.shi_tomasi_corners(img)
+                    
+                    # Display the image with detected corners
+                    feature_extraction.display_image_with_corners(img, corners)
+                    
+</code>
+            </article>
+        </section>
+        <section class="main-section" id="Basic_Drawing">
+            <header>
+                Basic Drawing
+            </header>
+            <article>
+                Welcome to Drawing Heaven.
+                <ul>
+                    <li>Create a canvas for drawing and visualization.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Draw basic geometric shapes, such as circles and rectangles.</li>
+                </ul>
+                <ul>
+                    <li>
+                        Render text on the canvas with customizable fonts and styles.
+                </ul>
+                <ul>
+                    <li>
+                        Enable user interaction for drawing on the canvas.
+                </ul>
+                <p>Canvas Creation: </p>
+                <code>from ni_system import basic_drawing
+
+                    # Create a canvas with specified dimensions
+                    canvas = basic_drawing.create_canvas(width=800, height=600)
+                    
+                    # Draw a line on the canvas
+                    basic_drawing.draw_line(canvas, start_point=(100, 100), end_point=(200, 200))
+                    
+                    # Display the canvas
+                    basic_drawing.display_canvas(canvas)
+                    </code>
+                <p>Geometric Shapes:
+                </p>
+                <code>from ni_system import basic_drawing
+
+                    # Create a canvas with specified dimensions
+                    canvas = basic_drawing.create_canvas(width=800, height=600)
+                    
+                    # Draw a red rectangle on the canvas
+                    basic_drawing.draw_rectangle(canvas, color="red", x=50, y=50, width=100, height=80)
+                    
+                    # Display the canvas
+                    basic_drawing.display_canvas(canvas)
+                    
+</code>
+                <p>Text Rendering:
+                </p>
+                <code>from ni_system import basic_drawing
+
+    # Create a canvas with specified dimensions
+    canvas = basic_drawing.create_canvas(width=800, height=600)
+    
+    # Render text on the canvas
+    basic_drawing.render_text(canvas, text="NI System", position=(300, 300), font_size=24)
+    
+    # Display the canvas
+    basic_drawing.display_canvas(canvas)
+    </code>
+                <p>Interactive Drawing:
+                </p>
+                <code>from ni_system import basic_drawing
+
+    # Create an interactive canvas
+    canvas = basic_drawing.create_interactive_canvas(width=800, height=600)
+    
+    # Allow the user to draw on the canvas
+    basic_drawing.enable_drawing(canvas)
+    
+    # Display the canvas with user-drawn content
+    basic_drawing.display_canvas(canvas)
+    </code>
+            </article>
+        </section>
+        <section class="main-section" id="Animation">
+            <header>
+                Animation
+            </header>
+            <article>
+                Always Animation.
+                <ul>
+                    <li>
+                        Create smooth animations using keyframes and interpolation.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Implement sprite-based animations for dynamic visual effects.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Animate objects along predefined paths for complex motion.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Trigger animations based on events or user interactions.
+                    </li>
+                </ul>
+                <p>Keyframe Animation:</p>
+                <code>from ni_system import animation
+
+                    # Create an animation with keyframes
+                    anim = animation.create_animation()
+                    
+                    # Add keyframes with position changes
+                    animation.add_keyframe(anim, time=0, position=(100, 100))
+                    animation.add_keyframe(anim, time=1, position=(300, 300))
+                    
+                    # Play the animation
+                    animation.play_animation(anim)
+                    </code>
+                <p>Sprite Animation:</p>
+                <code>from ni_system import animation
+
+                    # Create an animation with sprite frames
+                    sprite_anim = animation.create_sprite_animation()
+                    
+                    # Add sprite frames to the animation
+                    animation.add_sprite_frame(sprite_anim, frame_image="frame1.png", duration=0.2)
+                    animation.add_sprite_frame(sprite_anim, frame_image="frame2.png", duration=0.2)
+                    
+                    # Play the sprite animation
+                    animation.play_sprite_animation(sprite_anim)
+                    </code>
+
+                <p>Path Animation:</p>
+                <code>from ni_system import animation
+
+                        # Create an animation with a path
+                        path_anim = animation.create_path_animation()
+                        
+                        # Define a path with control points
+                        animation.add_path_control_point(path_anim, point=(100, 100))
+                        animation.add_path_control_point(path_anim, point=(300, 300))
+                        
+                        # Animate an object along the path
+                        animation.animate_along_path(path_anim, object_to_animate, duration=2)                        
+                        </code>
+
+                <p>Event-Based Animation:</p>
+                <code>from ni_system import animation
+
+                    # Create an animation triggered by a button click
+                    button = animation.create_button()
+                    animation.attach_animation_to_button(button, anim, event="click")
+                    
+                    # Display the button and wait for user interaction
+                    animation.display_button(button)                    
+                            </code>
+            </article>
+        </section>
+        <section class="main-section" id="Linked_External">
+            <header>
+                Linked External
+            </header>
+            <article>
+                We are here! Linked External.
+                <ul>
+                    <li>Link external databases for data storage and retrieval.
+
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Integrate external APIs for additional functionality.
+                    </li>
+                </ul>
+                <ul>
+                    <li>Creating a macOS app</li>
+                </ul>
+                <p>Database Integration:
+
+                </p>
+                <code>from ni_system import linked_external
+
+                    # Connect to a database
+                    db_connection = linked_external.connect_to_database("dbname", "username", "password")
+                    
+                    # Execute a query and fetch results
+                    query_result = linked_external.execute_query(db_connection, "SELECT * FROM table")
+                    
+                    # Process and use the data from the database
+                    linked_external.process_database_data(query_result)
+                    </code>
+                <p>API Integration:</p>
+                <code>from ni_system import linked_external
+
+                    # Connect to an external API
+                    api_connection = linked_external.connect_to_api("https
+                    </code>
+            </article>
+        </section>
+        <section class="main-section" id="Resources">
+            <header>
+                Resources
+            </header>
+            <article>
+                You can still have a lot to discovery!
+                <ul>
+                    <li>Link external files and resources for dynamic content.</li>
+                </ul>
+                <ul>
+                    <li>
+                        Link to cloud storage services for scalable and reliable resource management.</li>
+                </ul>
+                <p>File Handling:</p>
+                <code>from ni_system import linked_external
+
+                    # Load data from an external file
+                    file_data = linked_external.load_data_from_file("path/to/data.txt")
+                    
+                    # Process and use the data from the file
+                    linked_external.process_file_data(file_data)
+                    </code>
+                <p>Cloud Storage Integration:</p>
+                <code>from ni_system import linked_external
+
+                    # Connect to a cloud storage service
+                    cloud_storage = linked_external.connect_to_cloud_storage("aws", "access_key", "secret_key")
+                    
+                    # Upload and download files to/from the cloud
+                    linked_external.upload_to_cloud_storage(cloud_storage, local_file="local_file.txt", cloud_path="remote/file.txt")
+                    linked_external.download_from_cloud_storage
+                    (cloud_storage, cloud_path="remote/file.txt", local_file="local_file.txt")
+                    </code>
+            </article>
+        </section>
+        <div class="dh3">
+        <p>Explore the endless possibilities of computer vision development with NI System. From essential image
+            processing to seamless external resource integration, NI System empowers developers to turn their visions
+            into reality effortlessly. Get started today and witness the transformation of your computer vision
+            projects!
+        </p>
+        </div>
+    </main>
+</body>
+
+</html>
